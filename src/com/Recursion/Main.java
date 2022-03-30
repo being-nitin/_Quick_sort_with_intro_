@@ -16,7 +16,8 @@ public class Main {
         }
         int start = low;
         int end = high;
-        int pivot = start + (end-start)/2;
+        // assumed pivot be the last element.
+        int pivot = end;
         while(start<=end){
             while(arr[start]<arr[pivot]){
                 start++;
